@@ -13,8 +13,12 @@ Visit our [home page](https://taiga.moe) for more information. See the [guidelin
  - Changed Discord RPC.
  - Slightly altared Statistics page.
  - Changed global font and icons.
- - Changed default torrent sources
- - Changed default external links
+ - Changed default torrent sources.
+ - Changed default external links.
+
+## Disclaimer
+
+I'm not a C++ developer in any strech of the imagination, if you choose to use this instead of the [original Taiga](https://github.com/erengy/taiga) I cannot guarantee that this will work for you.
 
 ## Related projects
 

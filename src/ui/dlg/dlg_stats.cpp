@@ -189,11 +189,6 @@ void StatsDialog::Refresh() {
   switch (rating_type) {
     case RatingType::Ten:
       text += ToWstr(taiga::stats.score_mean / 10.0, 2) + L"\n";
-      text += ToWstr(taiga::stats.score_deviation / 10.0, 2);
-      break;
-    case RatingType::Five:
-      text += ToWstr(taiga::stats.score_mean / 20.0, 2) + L"\n";
-      text += ToWstr(taiga::stats.score_deviation / 20.0, 2);
       break;
   }
   SetDlgItemText(IDC_STATIC_ANIME_STAT1, text.c_str());
@@ -229,7 +224,6 @@ void StatsDialog::Refresh() {
     text += L" (" + ToWstr(taiga::stats.connections_failed) + L" failed)";
   text += L"\n";
   text += ToDateString(taiga::stats.uptime) + L"\n";
-  text += ToWstr(taiga::stats.tigers_harmed);
   SetDlgItemText(IDC_STATIC_ANIME_STAT4, text.c_str());
 }
 

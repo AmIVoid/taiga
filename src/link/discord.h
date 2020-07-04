@@ -22,7 +22,7 @@
 
 namespace link::discord {
 
-constexpr auto kApplicationId = L"379871385176244224";
+constexpr auto kApplicationId = L"728092296163229747";
 
 void Initialize();
 void Shutdown();

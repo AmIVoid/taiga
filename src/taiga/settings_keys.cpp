@@ -47,20 +47,23 @@
 namespace taiga {
 
 constexpr auto kDefaultExternalLinks =
-    L"Hibari|https://hb.wopian.me\r\n"
-    L"MALgraph|http://graph.anime.plus\r\n"
+    L"Anime tracking|\r\n"
     L"-\r\n"
-    L"AniChart|http://anichart.net/airing\r\n"
-    L"Monthly.moe|https://www.monthly.moe/weekly\r\n"
-    L"Senpai Anime Charts|http://www.senpai.moe/?mode=calendar\r\n"
+    L"AniChart|https://anichart.net/airing\r\n"
+    L"Anilist|https://anilist.co\r\n"
     L"-\r\n"
-    L"Anime Streaming Search Engine|http://because.moe\r\n"
-    L"The Fansub Database|https://fansubdb.com";
+    L"Torrenting|\r\n"
+    L"-\r\n"
+    L"Nyaa.si|https://nyaa.si/\r\n"
+    L"-\r\n"
+    L"Support|\r\n"
+    L"-\r\n"
+    L"Github|https://github.com/AmIVoid/taiga\r\n"
+    L"Twitter|https://twitter.com/Shift8Void\r\n";
 constexpr auto kDefaultFormatDiscordDetails =
     L"%title%";
 constexpr auto kDefaultFormatDiscordState =
-    L"$if(%episode%,Episode %episode%$if(%total%,/%total%) )"
-    L"$if(%group%,by %group%)";
+    L"$if(%episode%,Episode %episode%)";
 constexpr auto kDefaultFormatHttp =
     L"user=%user%"
     L"&name=%title%"
@@ -84,11 +87,11 @@ constexpr auto kDefaultFormatBalloon =
     L"$if(%group%,by %group%)\\n"
     L"$if(%name%,%name%)";
 constexpr auto kDefaultTorrentAppPath =
-    L"C:\\Program Files\\uTorrent\\uTorrent.exe";
+    L"C:\\Program Files (x86)\\qBittorrent\\qbittorrent.exe";
 constexpr auto kDefaultTorrentSearch =
-    L"https://nyaa.si/?page=rss&c=1_2&f=0&q=%title%";
+    L"https://nyaa.si/?page=rss&q=%title%&c=1_2&f=0";
 constexpr auto kDefaultTorrentSource =
-    L"https://www.tokyotosho.info/rss.php?filter=1,11&zwnj=0";
+    L"https://nyaa.si/?page=rss&c=1_2&f=0";
 
 // Here we assume that anything less than 10 MiB can't be a valid episode.
 constexpr int kDefaultFileSizeThreshold = 1024 * 1024 * 10;

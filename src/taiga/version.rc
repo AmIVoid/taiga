@@ -27,7 +27,7 @@ LANGUAGE LANG_NEUTRAL, SUBLANG_NEUTRAL
     {
         BLOCK "0409FDE9"
         {
-            VALUE "CompanyName", "erengy"
+            VALUE "CompanyName", "NotVoid"
             VALUE "FileDescription", "Taiga"
             VALUE "FileVersion", TAIGA_VERSION_STRING
             VALUE "InternalName", "Taiga"
